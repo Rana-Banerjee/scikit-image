@@ -12,6 +12,7 @@ from distutils.command.build_py import build_py
 from distutils.command.sdist import sdist
 from distutils.errors import CompileError, LinkError
 
+setuptools.dist.Distribution().fetch_build_eggs(['numpy==1.19.2'])
 
 DISTNAME = 'scikit-image'
 DESCRIPTION = 'Image processing in Python'
